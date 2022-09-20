@@ -1,0 +1,70 @@
+1569085439894	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\RHJ231~1\\AppData\\Local\\Temp\\rust_mozprofileAH6saC"
+Extension error: Services is not defined jar:file:///C:/Users/rhj231223/AppData/Local/Temp/rust_mozprofileAH6saC/extensions/cehomepage@mozillaonline.com.xpi!/mozillaonline/parent/ext-chinaEditionHomepage.js:20 :: onStartup@jar:file:///C:/Users/rhj231223/AppData/Local/Temp/rust_mozprofileAH6saC/extensions/cehomepage@mozillaonline.com.xpi!/mozillaonline/parent/ext-chinaEditionHomepage.js:20:1
+onStartup/<@resource://gre/modules/ExtensionCommon.jsm:1380:17
+awaitPromise@resource://gre/modules/addons/XPIProvider.jsm:228:15
+syncLoadManifest@resource://gre/modules/addons/XPIInstall.jsm:755:22
+updateMetadata@resource://gre/modules/addons/XPIDatabase.jsm:2822:32
+updateExistingAddon@resource://gre/modules/addons/XPIDatabase.jsm:3038:23
+processFileChanges@resource://gre/modules/addons/XPIDatabase.jsm:3127:31
+getNewSideloads@resource://gre/modules/addons/XPIProvider.jsm:2982:28
+
+1569085441505	addons.xpi	WARN	Exception running bootstrap method startup on cehomepage@mozillaonline.com: ReferenceError: Services is not defined(jar:file:///C:/Users/rhj231223/AppData/Local/Temp/rust_mozprofileAH6saC/extensions/cehomepage@mozillaonline.com.xpi!/mozillaonline/parent/ext-chinaEditionHomepage.js:20:1) JS Stack trace: onStartup@jar:file:///C:/Users/rhj231223/AppData/Local/Temp/rust_mozprofileAH6saC/extensions/cehomepage@ext-chinaEditionHomepage.js:20:1
+onStartup/<@ExtensionCommon.jsm:1380:17
+awaitPromise@XPIProvider.jsm:228:15
+syncLoadManifest@XPIInstall.jsm:755:22
+updateMetadata@XPIDatabase.jsm:2822:32
+updateExistingAddon@XPIDatabase.jsm:3038:23
+processFileChanges@XPIDatabase.jsm:3127:31
+getNewSideloads@XPIProvider.jsm:2982:28
+Extension error: ReferenceError: log_create_time1 is not defined moz-extension://45863b01-2bf0-4d9a-a880-616fe2474708/js/setup_init.js 398
+[[Exception stack
+uninstall_log@moz-extension://45863b01-2bf0-4d9a-a880-616fe2474708/js/setup_init.js:398:12
+@moz-extension://45863b01-2bf0-4d9a-a880-616fe2474708/js/setup_init.js:86:2
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:594:13
+wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:797:18
+]]
+1569085441983	Marionette	INFO	Listening on port 11716
+1569085442015	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: moz-extension://45863b01-2bf0-4d9a-a880-616fe2474708/js/translate.js, line 218: TypeError: data.data is undefined
+Extension error: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIDOMWindowUtils.removeSheetUsingURIString]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://gre/modules/ExtensionCommon.jsm :: runSafeSyncWithoutClone :: line 75"  data: no] undefined 75
+[[Exception stack
+runSafeSyncWithoutClone@resource://gre/modules/ExtensionCommon.jsm:75:12
+cleanup@resource://gre/modules/ExtensionContent.jsm:403:11
+close@resource://gre/modules/ExtensionContent.jsm:913:14
+inner-window-destroyed@resource://gre/modules/ExtensionContent.jsm:998:19
+observe@resource://gre/modules/ExtensionContent.jsm:1016:27
+Current stack
+runSafeSyncWithoutClone@resource://gre/modules/ExtensionCommon.jsm:81:9
+cleanup@resource://gre/modules/ExtensionContent.jsm:403:11
+close@resource://gre/modules/ExtensionContent.jsm:913:14
+inner-window-destroyed@resource://gre/modules/ExtensionContent.jsm:998:19
+observe@resource://gre/modules/ExtensionContent.jsm:1016:27
+]]
+console.error: WebExtensions: 
+  Message: TypeError: this.mozCNUtils is undefined
+  Stack:
+    onShutdown@jar:file:///C:/Users/rhj231223/AppData/Local/Temp/rust_mozprofileAH6saC/extensions/cehomepage@mozillaonline.com.xpi!/mozillaonline/parent/ext-chinaEditionHomepage.js:31:7
+ExtensionAPI/<@resource://gre/modules/ExtensionCommon.jsm:356:14
+wrapper@resource://gre/modules/ExtensionCommon.jsm:300:14
+emit@resource://gre/modules/ExtensionCommon.jsm:327:24
+emit@resource://gre/modules/Extension.jsm:1746:25
+shutdown@resource://gre/modules/Extension.jsm:2360:10
+shutdown@resource://gre/modules/Extension.jsm:1493:39
+callBootstrapMethod@resource://gre/modules/addons/XPIProvider.jsm:1809:33
+_shutdown@resource://gre/modules/addons/XPIProvider.jsm:1938:17
+observe@resource://gre/modules/AsyncShutdown.jsm:551:16
+
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 551: uncaught exception: Object
+[Parent 14880, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1568728986/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 13240, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1568728986/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 13240, Chrome_
+###!!! [Child][MessageChannel] Error: (msgtype=0x36011E,name=PContent::Msg_DetachBrowsingContext) Closed channel: cannot send/recv
+
+1569085448986	Marionette	INFO	Stopped listening on port 11716
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 13372, Chrome_Child
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
